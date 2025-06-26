@@ -1,0 +1,154 @@
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar {
+    width: 1440px;
+    height: 117.65px;
+    position: relative;
+  }
+  
+  .navbar-background {
+    width: 1440px;
+    height: 117.65px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #092183;
+  }
+  
+  .navbar-bar {
+    width: 1366px;
+    height: 92.62px;
+    position: absolute;
+    left: 37px;
+    top: 10.01px;
+    background: #3365A6;
+    border-radius: 15px;
+  }
+  
+  .nav-item {
+    position: absolute;
+    color: white;
+    font-size: 64px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .nav-item.order {
+    width: 173px;
+    height: 48.19px;
+    left: 1070px;
+    top: 19px;
+  }
+  
+  .nav-item.home {
+    width: 179px;
+    height: 48.19px;
+    left: 122px;
+    top: 19px;
+  }
+  
+  .nav-item.menu {
+    width: 169px;
+    height: 62px;
+    left: 601px;
+    top: 19px;
+  }
+h1 {
+    text-align: center;
+    background-color: rgb(244, 240, 160);
+    border-radius: 75%;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+img {
+    padding-right: 100px;
+    padding-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pancakes {
+    display:inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 145px;
+}
+.frenchtoast {
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 250px;
+}
+.omelette {
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 250px;
+}
+.burger {
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 145px;
+}
+.chickenwrap {
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 250px;
+}
+.caesarsalad {
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 250px;
+}
+.tea {
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 145px;
+}
+.coffee {
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 250px;
+}
+.juice{
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: azure;
+    padding-left: 5px;
+    margin-left: 250px;
+}
