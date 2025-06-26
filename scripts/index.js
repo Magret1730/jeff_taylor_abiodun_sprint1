@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Calls review function on the page
     displayReview();
 
-    // Set interval to change review every 2 seconds
-    setInterval(displayReview, 2000);
+    // Set interval to change review every 3 seconds
+    setInterval(displayReview, 3000);
 });
