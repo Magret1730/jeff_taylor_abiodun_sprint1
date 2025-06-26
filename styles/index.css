@@ -5,7 +5,7 @@
 }
   
 body, html {
-    height: 100%;
+    height: 100vh;
     font-family: Arial, sans-serif;
     color: white;
 }
@@ -18,7 +18,7 @@ body, html {
   
 .sidebar {
     background-color: #0f2537;
-    width: 15.625rem;
+    width: 13.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +147,7 @@ body, html {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     text-align: center;
-    line-height: 0.5rem;
+    line-height: 1rem;
 }
 
 .about, .testimonial {
@@ -172,12 +172,14 @@ body, html {
 }
 
 /* Responsive Design */
+/* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
     .sidebar {
-        padding: 5rem 0;
+        padding: 10rem 0;
     }
 }
   
+/* Mobile */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
