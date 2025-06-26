@@ -75,6 +75,15 @@ const addItemRow = (container, item) => {
   qtyInput.min = 1;
   qtyInput.value = 1;
 
+  // Add validation for quantity input
+  qtyInput.addEventListener('input', () => {
+    const value = parseInt(qtyInput.value, 10);
+    if (value < 1 || isNaN(value)) {
+      qtyInput.value = 1;
+      alert('Quantity must be at least 1');
+    }
+  });
+
   const removeBtn = document.createElement('button');
   removeBtn.type = 'button';
   removeBtn.textContent = 'Remove';
@@ -122,6 +131,11 @@ const calculateTotal = (container, itemPrices) => {
       console.warn(`No quantity input found for item: ${item}`);
       return;
     }
+    const negativeQuantity = parseInt(qtyInput.value) || 0;
+    if (negativeQuantity <= 0) {
+      console.warn(`Invalid quantity for item: ${item}. Quantity must be greater than 0.`);
+      return;
+    }
     const quantity = parseInt(qtyInput.value) || 0;
     const price = itemPrices[item] || 0;
     
@@ -142,7 +156,7 @@ const showTotal = (total, itemCount, container) => {
   const totalDisplay = document.createElement('div');
   totalDisplay.className = 'total-display';
   totalDisplay.style.cssText = `
-    background: rgba(9, 33, 131, 0.9);
+    background: #0f2537;
     color: white;
     padding: 1rem;
     border-radius: 10px;
@@ -174,15 +188,41 @@ const handlePlaceOrder = (e, itemContainer, itemPrices) => {
   
   // Get contact details
   const contactData = {
-    name: document.getElementById('name').value,
-    phone: document.getElementById('phone').value,
-    address: document.getElementById('address').value,
-    comments: document.getElementById('comments').value
+    name: document.getElementById('name').value.trim(),
+    phone: document.getElementById('phone').value.trim(),
+    address: document.getElementById('address').value.trim(),
+    comments: document.getElementById('comments').value.trim()
   };
   
   // Validate contact details
   if (!contactData.name || !contactData.phone || !contactData.address) {
     alert('Please fill in all required contact details (Name, Phone, Address)');
+    return;
+  }
+
+  // Validate name - contains only letters and spaces
+  const nameRegex = /^[a-zA-Z\s]+$/;
+  if (!nameRegex.test(contactData.name)) {
+    alert('Name must contain only letters and spaces');
+    return;
+  }
+
+  // Validate phone number -it is a valid format
+  const phoneRegex = /(\(?\d{3}\)?)?[\s\-]*\d{3}[\s\-]*\d{4}/;
+  if (!phoneRegex.test(contactData.phone)) {
+    alert('Phone number must be a valid format (e.g., (123) 456-7890 or 123-456-7890)');
+    return;
+  }
+
+  // Validate address -  not too short
+  if (contactData.address.length < 10) {
+    alert('Address must be at least 10 characters long');
+    return;
+  }
+
+  // validate comments - 200 characters limit length
+  if (contactData.comments.length > 200) {
+    alert('Comments must be less than 200 characters');
     return;
   }
   

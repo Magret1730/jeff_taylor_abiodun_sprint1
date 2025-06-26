@@ -1,80 +1,141 @@
+<!--
+ Description: Menu Page for Sunny Bites Cafe
+ Authors: Jeff, Abiodun, Taylor
+ Date: 2025-06-20
+-->
+
 <!DOCTYPE html>
 <html lang=en>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"  >
 <link rel="stylesheet" href="./styles/menu.css">
 <title>Menu</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-background"></div>
-        <div class="navbar-bar"></div>
-        <a href="./order.html" class="nav-item order">Order</a>
-        <a href="./index.html" class="nav-item home">Home</a>
-        <a href="./Menu.html" class="nav-item menu">Menu</a>
-    </div>
-</br>
-<h1 id="Breakfast">Breakfast</h1>
-<img src="images/pancakes.jpg" alt="pancakes" width="200" height="200">
-<img src="images/frenchtoast.jpg" alt="frenchtoast" width="200" height="200">
-<img src="images/omelette.jpg" alt="omelette" width="200" height="200">
+    <header class="navbar">
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./Menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="./order.html">Order</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h1>Breakfast</h1>
 
-<div class="pancakes">
-<p> Pancakes make for a great way to start the morning! ($5.99)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./images/pancakes.jpg" alt="pancakes">
+                    <h3>Pancakes</h3>
+                    <p> Pancakes make for a great way to start the morning!</p>
+                    <p class="price">$5.99</p>
+                    <!-- HTML Validator complained of multiple add-to-order but that was done because of menu.js -->
+                    <button id="add-to-order">Add to Order</button>
+                </div>
 
-<div class="frenchtoast">
-<p> French toast will give you a great boost to your morning! ($8.99)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
+                <div class="card">
+                    <img src="./images/frenchtoast.jpg" alt="frenchtoast">
+                    <h3>French Toast</h3>
+                    <p> French toast will give you a great boost to your morning!</p>
+                    <p class="price">$8.99</p>
+                    <button id="add-to-order">Add to Order</button>
+                </div>
 
-<div class="omelette">
-<p> A classic with many options to add for unique variety every time! ($10.99)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
+                <div class="card">
+                    <img src="./images/omelette.jpg" alt="omelette">
+                    <h3>Omelette</h3>
+                    <p> A classic with many options to add for unique variety every time!</p>
+                    <p class="price">$10.99</p>
+                    <button id="add-to-order">Add to Order</button>
+                </div>
+            </div>
+        </section>
 
-</br>
-<h1 id="Lunch">Lunch</h1>
-<img src="images/burger.jpg" alt="burger" width="200" height="200">
-<img src="images/chickenwrap.jpg" alt="chickenwrap" width="200" height="200">
-<img src="images/caesarsalad.jpg" alt="caesarsalad" width="200" height="200">
+        <section>
+            <h1 id="Lunch">Lunch</h1>
 
-<div class="burger">
-<p> A hearty burger to give you energy to finish out the day. ($5.99)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
-    
-<div class="chickenwrap">
-<p> A simple wrap as a grab-and-go sort of meal. ($4.99)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
-    
-<div class="caesarsalad">
-<p> A caesar salad for something light but filling. ($8.99)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./images/burger.jpg" alt="burger">
+                    <h3>Burger</h3>
+                    <p> A hearty burger to give you energy to finish out the day.</p>
+                    <p class="price">$5.99</p>
+                    <button id="add-to-order">Add to Order</button>
+                </div>
 
-</br>
-<h1 id="Lunch">Beverages</h1>
-<img src="images/tea.jpg" alt="tea" width="200" height="200">
-<img src="images/coffee.jpg" alt="coffee" width="200" height="200">
-<img src="images/juice.jpg" alt="juice" width="200" height="200">
+                <div class="card">
+                    <img src="./images/chickenwrap.jpg" alt="chickenwrap">
+                    <h3>Chicken Wrap</h3>
+                    <p> A simple wrap as a grab-and-go sort of meal.</p>
+                    <p class="price">$4.99</p>
+                    <button id="add-to-order">Add to Order</button>
+                </div>
 
-<div class="tea">
-<p> Subtle tea to slowly focus one in for the day. ($2.00)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
-        
-<div class="coffee">
-<p> A cup of coffee to warm away the remainders of sleep. ($2.00)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
-        
-<div class="juice">
-<p> A classic with many options to add for unique variety every time! ($3.00)</p>
-<button id="Add to Order">Add to Order</button>
-</div>
+                <div class="card">
+                    <img src="./images/caesarsalad.jpg" alt="caesarsalad">
+                    <h3>Caesar Salad</h3>
+                    <p> A caesar salad for something light but filling. ($8.99)</p>
+                    <p class="price">$8.99</p>
+                    <button id="add-to-order">Add to Order</button>
+                </div>
+
+        </section>
+
+        <section>
+            <h1 id="Beverages">Beverages</h1>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="./images/tea.jpg" alt="cake">
+                    <h3>Tea</h3>
+                    <p> Subtle tea to slowly focus one in for the day.</p>
+                    <p class="price">$2.00</p>
+                    <button id="add-to-order">Add to Order</button>
+                </div>
+
+                <div class="card">
+                    <img src="./images/coffee.jpg" alt="icecream">
+                    <h3>Coffee</h3>
+                    <p> A cup of coffee to warm away the remainders of sleep.</p>
+                    <p class="price">$2.00</p>
+                    <button id="add-to-order">Add to Order</button>
+                </div>
+
+                <div class="card">
+                    <img src="./images/juice.jpg" alt="pie">
+                    <h3>Juice</h3>
+                    <p> A classic with many options to add for unique variety every time!</p>
+                    <p class="price">$3.00</p>
+                    <button id="add-to-order">Add to Order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+          <section>
+            <h3>Visit Us</h3>
+            <p>5 Elizabeth St, Melbourne,<br>St. Johns, Canada</p>
+          </section>
+          <section>
+            <h4>Hours:</h4>
+            <p>Mon – Sun <br> 8AM – 9PM</p>
+          </section>
+          <section>
+            <h4>Contact:</h4>
+            <p>+1 (709)-999-9999</p>
+          </section>
+        </div>
+    </footer>      
+
+    <script src="./scripts/menu.js"></script>
 </body>
 </html>

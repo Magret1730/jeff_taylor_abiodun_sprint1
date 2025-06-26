@@ -1,154 +1,235 @@
-body {
-    background-image: url('../images/menu_background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background-color: #f4f4f4;;
+}
+
 .navbar {
-    width: 1440px;
-    height: 117.65px;
-    position: relative;
-  }
-  
-  .navbar-background {
-    width: 1440px;
-    height: 117.65px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #092183;
-  }
-  
-  .navbar-bar {
-    width: 1366px;
-    height: 92.62px;
-    position: absolute;
-    left: 37px;
-    top: 10.01px;
-    background: #3365A6;
-    border-radius: 15px;
-  }
-  
-  .nav-item {
-    position: absolute;
-    color: white;
-    font-size: 64px;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  .nav-item.order {
-    width: 173px;
-    height: 48.19px;
-    left: 1070px;
-    top: 19px;
-  }
-  
-  .nav-item.home {
-    width: 179px;
-    height: 48.19px;
-    left: 122px;
-    top: 19px;
-  }
-  
-  .nav-item.menu {
-    width: 169px;
-    height: 62px;
-    left: 601px;
-    top: 19px;
-  }
+  background-color: #0f2537;
+  padding: 1.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.25rem;
+}
+
+.navbar a:hover {
+  color: rgba(158, 108, 73, 0.7);
+}
+
+main {
+  margin: 7rem 5rem;
+}
+
+section {
+  margin-top: 4rem;;
+}
+
 h1 {
     text-align: center;
-    background-color: rgb(244, 240, 160);
-    border-radius: 75%;
-    width: 200px;
-    height: 50px;
-    margin: auto;
+    font-size: 2rem;
+    margin: 2rem 0;
 }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: white;
+    width: 30%;
+    height: auto;
+    color: #0f2537;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
 img {
-    padding-right: 100px;
-    padding-left: 150px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-.pancakes {
-    display:inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 145px;
+
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
-.frenchtoast {
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 250px;
+
+p {
+  font-size: 1.2rem;
+  padding: 0 1rem;
 }
-.omelette {
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 250px;
+
+.price {
+  font-size: 1.5rem;
+  color: #0f2537;
+  color: rgba(158, 108, 73, 1);
+  font-weight: bold;
+  margin: 1rem 0;
 }
-.burger {
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 145px;
+
+button {
+  background-color: #0f2537;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem 0 1rem 0;
 }
-.chickenwrap {
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 250px;
+
+button:hover {
+  background-color: rgba(158, 108, 73, 0.7);
 }
-.caesarsalad {
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 250px;
+
+/*  Footer */
+.footer {
+  background-color: #0f2537;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
 }
-.tea {
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 145px;
+
+.contact-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  text-align: center;
 }
-.coffee {
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 250px;
+
+.contact-info section {
+  flex: 1 1 200px;
 }
-.juice{
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-    height: 150px;
-    background-color: azure;
-    padding-left: 5px;
-    margin-left: 250px;
+
+.contact-info h3,
+.contact-info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: rgba(158, 108, 73, 0.9);
+}
+
+.contact-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+/* Tablet Responsiveness */
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 1.5rem;
+  }
+
+  main {
+    margin: 6rem 2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .price {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem 0.5rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .navbar a {
+    font-size: 1.25rem;
+  }
+
+  main {
+    margin: 6rem 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info section {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
