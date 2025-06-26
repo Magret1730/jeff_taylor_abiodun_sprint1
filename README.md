@@ -8,7 +8,7 @@ following UI/UX principles taught during the course.
 
 ## Figma Design
 > [Sunny Bites Café – Figma Design](https://www.figma.com/design/PupyU1NcliZCXdTUE9kL0m/Sunny-Bites-Cafe?node-id=0-1&t=eEK0MtWqpPShmSPJ-1)  
-> Designed by **Jeff Woolridge**, **Abiodun Magret**, and **Taylor Carter**
+> Designed by **Jeff Woolridge**, **Abiodun Magret Oyedele**, and **Taylor Carter**
 
 ## Pages
 
